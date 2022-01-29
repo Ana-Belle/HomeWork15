@@ -9,21 +9,29 @@
 /* Begin PBXBuildFile section */
 		8EF75D6027A1ABAE0083FA64 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EF75D5F27A1ABAE0083FA64 /* AppDelegate.swift */; };
 		8EF75D6227A1ABAE0083FA64 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EF75D6127A1ABAE0083FA64 /* SceneDelegate.swift */; };
-		8EF75D6427A1ABAE0083FA64 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EF75D6327A1ABAE0083FA64 /* ViewController.swift */; };
+		8EF75D6427A1ABAE0083FA64 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EF75D6327A1ABAE0083FA64 /* MainViewController.swift */; };
 		8EF75D6727A1ABAE0083FA64 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8EF75D6527A1ABAE0083FA64 /* Main.storyboard */; };
 		8EF75D6927A1ABAF0083FA64 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8EF75D6827A1ABAF0083FA64 /* Assets.xcassets */; };
 		8EF75D6C27A1ABAF0083FA64 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8EF75D6A27A1ABAF0083FA64 /* LaunchScreen.storyboard */; };
+		8EF75D7727A2A6E80083FA64 /* ViewData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EF75D7627A2A6E80083FA64 /* ViewData.swift */; };
+		8EF75D7927A2B71D0083FA64 /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EF75D7827A2B71D0083FA64 /* MainViewModel.swift */; };
+		8EF75D7C27A2D3A60083FA64 /* TestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EF75D7B27A2D3A60083FA64 /* TestView.swift */; };
+		8EF75D7E27A2D3FA0083FA64 /* TestView + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EF75D7D27A2D3FA0083FA64 /* TestView + Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		8EF75D5C27A1ABAE0083FA64 /* HomeWork15.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HomeWork15.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8EF75D5F27A1ABAE0083FA64 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8EF75D6127A1ABAE0083FA64 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		8EF75D6327A1ABAE0083FA64 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		8EF75D6327A1ABAE0083FA64 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		8EF75D6627A1ABAE0083FA64 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8EF75D6827A1ABAF0083FA64 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8EF75D6B27A1ABAF0083FA64 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8EF75D6D27A1ABAF0083FA64 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8EF75D7627A2A6E80083FA64 /* ViewData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewData.swift; sourceTree = "<group>"; };
+		8EF75D7827A2B71D0083FA64 /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
+		8EF75D7B27A2D3A60083FA64 /* TestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestView.swift; sourceTree = "<group>"; };
+		8EF75D7D27A2D3FA0083FA64 /* TestView + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TestView + Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,13 +66,49 @@
 			children = (
 				8EF75D5F27A1ABAE0083FA64 /* AppDelegate.swift */,
 				8EF75D6127A1ABAE0083FA64 /* SceneDelegate.swift */,
-				8EF75D6327A1ABAE0083FA64 /* ViewController.swift */,
+				8EF75D7427A1B3780083FA64 /* MainModule */,
 				8EF75D6527A1ABAE0083FA64 /* Main.storyboard */,
 				8EF75D6827A1ABAF0083FA64 /* Assets.xcassets */,
 				8EF75D6A27A1ABAF0083FA64 /* LaunchScreen.storyboard */,
 				8EF75D6D27A1ABAF0083FA64 /* Info.plist */,
 			);
 			path = HomeWork15;
+			sourceTree = "<group>";
+		};
+		8EF75D7327A1B3540083FA64 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8EF75D6327A1ABAE0083FA64 /* MainViewController.swift */,
+				8EF75D7B27A2D3A60083FA64 /* TestView.swift */,
+				8EF75D7D27A2D3FA0083FA64 /* TestView + Extension.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		8EF75D7427A1B3780083FA64 /* MainModule */ = {
+			isa = PBXGroup;
+			children = (
+				8EF75D7527A1B3EC0083FA64 /* Model */,
+				8EF75D7327A1B3540083FA64 /* View */,
+				8EF75D7A27A2B72F0083FA64 /* ViewModel */,
+			);
+			path = MainModule;
+			sourceTree = "<group>";
+		};
+		8EF75D7527A1B3EC0083FA64 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				8EF75D7627A2A6E80083FA64 /* ViewData.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		8EF75D7A27A2B72F0083FA64 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				8EF75D7827A2B71D0083FA64 /* MainViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,9 +182,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8EF75D6427A1ABAE0083FA64 /* ViewController.swift in Sources */,
+				8EF75D7C27A2D3A60083FA64 /* TestView.swift in Sources */,
+				8EF75D7927A2B71D0083FA64 /* MainViewModel.swift in Sources */,
+				8EF75D6427A1ABAE0083FA64 /* MainViewController.swift in Sources */,
 				8EF75D6027A1ABAE0083FA64 /* AppDelegate.swift in Sources */,
+				8EF75D7727A2A6E80083FA64 /* ViewData.swift in Sources */,
 				8EF75D6227A1ABAE0083FA64 /* SceneDelegate.swift in Sources */,
+				8EF75D7E27A2D3FA0083FA64 /* TestView + Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
